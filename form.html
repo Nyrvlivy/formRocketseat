@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de Cadastro| Atividade: 19.05">
-    <meta name="author" content="Nyrvlivy">
-    <title>Cadastro | Rocketseat</title>
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="icon" type="image/x-icon" href="img/logo_rocketseat.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulário de Cadastro| Atividade: 19.05">
+        <meta name="author" content="Nyrvlivy">
+        <title>Cadastro | Rocketseat</title>
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="icon" type="image/x-icon" href="img/logo_rocketseat.ico">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="topo">
-            <h2 class="topo-aluno">Aluno</h2>
-            <h2 class="topo-empresa">Empresa</h2>
-        </div>
-    </header>    
-    <main>
-        <div class="painel-principal-esquerda">
-            <div class="titulo-esquerda">
-                <h1 class="esquerda-titulo">Crie sua conta</h1>
-            </div>
-            <div class="dados">                
-                <input class="email" type="email" name="email" id="email" placeholder="Seu E-mail">
-                <input class="nome" type="nome" name="nome" id="nome" placeholder="Seu nome">
-                <input class="senha" type="senha" name="senha" id="senha" placeholder="Sua senha">
-                <input class="confirmar-senha" type="confirmar-senha" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha">
-            </div>
-            <div class="validacao">
-                <div class="quadrado-validacao"></div>
-            </div>
-            <div class="termos">
-                <p class="texto-termos">Ao se registrar, você aceita nossos termos de uso e a nossa política de privacidade.</p>
-            </div>
-            <div class="botao">
-                <button>CADASTRAR</button>
-            </div>
-        </div>
-        <div class="painel-principal-direita">
-            <div logo-com-nome>
-                <img class="logoNome" src="img/logoNome.svg">                
-            </div>
-            <div class="painel-direita">
-                <h1 class="titulo-direita">Mais de 200 mil boosters já estão conectados.</h1>
-                <p class="subtitulo-direita">Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
-            </div>
-            <div class="voltar">
-                <img class="seta" src="img/seta.svg">
-                <button class="btn-voltar">Voltar para login</button>
-            </div>
-        </div>
-    </main>    
+    <div class="area-total">                        
+        <header>
+                <div class="topo">
+                    <h2 class="topo-aluno">Aluno</h2>
+                    <h2 class="topo-empresa">Empresa</h2>
+                </div>
+        </header>    
+        <main>
+            <div class="area-total-cadastro"> 
+                <div class="painel-principal-esquerda">                    
+                    <div class="titulo-esquerda">                        
+                        <h1 class="esquerda-titulo">Crie sua conta</h1>
+                    </div>
+                    <div class="dados">                
+                        <input class="email" type="email" name="email" id="email" placeholder="Seu E-mail">
+                        <input class="nome" type="nome" name="nome" id="nome" placeholder="Seu nome">
+                        <input class="senha" type="senha" name="senha" id="senha" placeholder="Sua senha">
+                        <input class="confirmar-senha" type="confirmar-senha" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha">
+                    </div>
+                    <div class="validacao">
+                            <div class="container">
+                                <form action="" method="get">
+                                    <div class="g-recaptcha" data-sitekey="6LcHGhITAAAAABIgEAplK2EWsVFkaE5o0DWUpsIs" aria-placeholder="teste"></div>
+                                </form>
+                            </div>
+                    </div>
+                    <div class="termos-cima">
+                        <p class="termo-1">Ao se registrar, você aceita nossos </p>
+                        <p class="termo-2">termos de uso </p>
+                        <p class="termo-3"> e </p>
+                    </div>
+                    <div class="termos-baixo">                       
+                        <p class="termo-4">a nossa </p>
+                        <p class="termo-5">política de privacidade</p>
+                        <p class="termo-6">.</p>
+                    </div>
+                    <div class="botao-esquerda">
+                        <button class="btn-cadastrar">CADASTRAR</button>
+                    </div>                    
+                </div>
+                <div class="painel-principal-direita">
+                    <div class="logo-com-nome">
+                        <img class="logoNome" src="img/logoNome.svg">                
+                    </div>
+                    <div class="painel-direita">
+                        <h1 class="titulo-direita">Mais de 200 mil boosters já estão conectados.</h1>
+                        <p class="subtitulo-direita">Junte-se a milhares de devs e acelere na direção dos seus objetivos</p>
+                    </div>
+                    <div class="voltar">
+                        <img class="seta" src="img/seta.svg">
+                        <button class="btn-voltar">Voltar para login</button>
+                    </div>
+                </div> 
+            </div>    
+        </main>    
+    </div>     
 </body>
 </html>
 
